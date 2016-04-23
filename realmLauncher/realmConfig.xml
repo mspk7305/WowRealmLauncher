@@ -1,0 +1,27 @@
+<config>
+<realms>
+  <realm>
+    <id>1</id>
+    <name>Excalibur</name>
+    <clientversion>2.4.3</clientversion>
+    <website>http://www.excalibur-wow.com/</website>
+    <realmlist>exwow-serv.exnw.com</realmlist>
+    <patchlist />
+  </realm>
+  <realm>
+    <id>2</id>
+    <name>Vengeance</name>
+    <clientversion>2.4.3</clientversion>
+    <website>https://www.vengeancewow.com/</website>
+    <realmlist>logon.vengeancewow.com</realmlist>
+    <patchlist />
+  </realm>
+  <realm>
+    <id>3</id>
+    <name>Retail</name>
+    <clientversion>6.2.4</clientversion>
+    <website>http://us.battle.net/wow/en/</website>
+    <realmlist>us.logon.worldowarcraft.com</realmlist>
+    <patchlist>us.version.worldofwarcraft.com </patchlist>
+  </realm>
+</realms></config>

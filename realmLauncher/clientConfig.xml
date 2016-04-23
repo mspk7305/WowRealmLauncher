@@ -1,0 +1,13 @@
+<config>
+<clients>
+  <client>
+    <id>1</id>
+    <clientversion>2.4.3</clientversion>
+    <clientpath>C:\Users\Jedi\Desktop\wow2.4.3\wow.exe</clientpath>
+  </client>
+  <client>
+    <id>2</id>
+    <clientversion>6.2.4</clientversion>
+    <clientpath>C:\Program Files (x86)\World of Warcraft\wow.exe</clientpath>
+  </client>
+</clients></config>
