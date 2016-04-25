@@ -39,10 +39,11 @@
             this.btnLaunchRealm = new System.Windows.Forms.Button();
             this.realmView = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblSelectedClient = new System.Windows.Forms.Label();
             this.btnSaveClients = new System.Windows.Forms.Button();
             this.btnRemoveVersion = new System.Windows.Forms.Button();
             this.clientView = new System.Windows.Forms.DataGridView();
-            this.lblSelectedClient = new System.Windows.Forms.Label();
+            this.chkClearWDB = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.realmView)).BeginInit();
@@ -62,6 +63,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.chkClearWDB);
             this.tabPage1.Controls.Add(this.chkAppend);
             this.tabPage1.Controls.Add(this.lblSelectedRealm);
             this.tabPage1.Controls.Add(this.btnRealmSave);
@@ -167,6 +169,15 @@
             this.tabPage2.Text = "Clients";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // lblSelectedClient
+            // 
+            this.lblSelectedClient.AutoSize = true;
+            this.lblSelectedClient.Location = new System.Drawing.Point(154, 340);
+            this.lblSelectedClient.Name = "lblSelectedClient";
+            this.lblSelectedClient.Size = new System.Drawing.Size(72, 13);
+            this.lblSelectedClient.TabIndex = 8;
+            this.lblSelectedClient.Text = "(Select Client)";
+            // 
             // btnSaveClients
             // 
             this.btnSaveClients.Location = new System.Drawing.Point(559, 335);
@@ -196,14 +207,16 @@
             this.clientView.TabIndex = 0;
             this.clientView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.clientView_CellContentClick);
             // 
-            // lblSelectedClient
+            // chkClearWDB
             // 
-            this.lblSelectedClient.AutoSize = true;
-            this.lblSelectedClient.Location = new System.Drawing.Point(154, 340);
-            this.lblSelectedClient.Name = "lblSelectedClient";
-            this.lblSelectedClient.Size = new System.Drawing.Size(72, 13);
-            this.lblSelectedClient.TabIndex = 8;
-            this.lblSelectedClient.Text = "(Select Client)";
+            this.chkClearWDB.AutoSize = true;
+            this.chkClearWDB.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkClearWDB.Location = new System.Drawing.Point(274, 339);
+            this.chkClearWDB.Name = "chkClearWDB";
+            this.chkClearWDB.Size = new System.Drawing.Size(136, 17);
+            this.chkClearWDB.TabIndex = 8;
+            this.chkClearWDB.Text = "Clear WDB with launch";
+            this.chkClearWDB.UseVisualStyleBackColor = true;
             // 
             // realmLauncher
             // 
@@ -242,6 +255,7 @@
         private System.Windows.Forms.Label lblSelectedRealm;
         private System.Windows.Forms.CheckBox chkAppend;
         private System.Windows.Forms.Label lblSelectedClient;
+        private System.Windows.Forms.CheckBox chkClearWDB;
     }
 }
 

@@ -274,6 +274,18 @@ namespace realmLauncher
                 {
                     try
                     {
+                        if (chkClearWDB.Checked)
+                        {
+                            string wdbDir = Path.GetDirectoryName(clientTable.Rows[properRealm][2].ToString())+"\\Cache\\WDB";
+                            try
+                            {
+                                Directory.Delete(wdbDir, true);
+                            }
+                            catch(Exception ex)
+                            {
+                                MessageBox.Show("Could not delete cache at" + Environment.NewLine + wdbDir + Environment.NewLine + ex.ToString());
+                            }
+                        }
                         Process.Start(clientTable.Rows[properRealm][2].ToString());
                     }
                     catch
